@@ -1,0 +1,29 @@
+.header{
+    background-color: #222;
+    height :   36px;
+    width : 100%;
+    padding : 8px 32px 8px 16px;
+    display : flex;
+    justify-content: space-between;
+}
+
+.headerBtn {
+    visibility: hidden;
+}
+
+.logo {
+    background-color: #ff7f7f;
+    height : 35px;
+    animation-name: logoAni;
+    animation: rotation 8s infinite linear;
+    justify-content: left;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+  }

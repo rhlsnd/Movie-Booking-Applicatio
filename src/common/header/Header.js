@@ -1,14 +1,16 @@
-import React from "react";
-import "./Header.css";
-import logo from './logo.svg';
+import React, { Component } from  'react';
+import './Header.css';
+import { ReactComponent as Logo} from '../../assets/svg0.svg'
 
-function Header (props){
+class Header extends Component{
+    render(){
         return(
-            <div className="header">
-                <img src={logo} alt="My logo" className="logo"/>
-                <button className={props.btnType}>{props.buttonName}</button>
+            <div className='header'>
+                    <Logo className='logo'/>
             </div>
-        );
+        )
+
+    }
 }
 
 export default Header;
